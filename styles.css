@@ -7,9 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
 h1, h2, p {
@@ -20,14 +19,14 @@ h1, h2, p {
 
 /* Header */
 header {
-    padding: 5px 10px;
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
 }
 
 header img {
-    height: 90px;
+    height: 50px;
 }
 
 /* Navegação */
@@ -40,12 +39,27 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #e63946;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
 
 #web-obt {
@@ -88,7 +102,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    min-width: 300px;
 }
 
 /* Elementos específicos */
@@ -144,7 +158,7 @@ p {
 .second-container {
     background-color: #fff;
     color: #333;
-    padding: 40px 50px ;
+    padding: 40px 20px ;
     text-align: center;
 }
 
@@ -157,6 +171,7 @@ p {
 .second-container p {
     font-size: 1em;
     color: #333;
+    margin: 20px;
 }
 
 .read-more {
@@ -345,4 +360,23 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+ /* Media Queries para dispositivos menores */
+ @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-container {
+        flex-direction: column;
+    }
 }
