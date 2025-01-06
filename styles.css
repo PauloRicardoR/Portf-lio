@@ -366,32 +366,33 @@ footer a:hover {
  @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: center; /* Centraliza os itens no eixo horizontal */
+        align-items: center; 
     }
 
     .container {
         flex-direction: column;
-        align-items: center; /* Centraliza os itens no eixo horizontal */
-        text-align: center; /* Centraliza o texto */
+        align-items: center; 
+        text-align: center;
     }
 
     .skills-container {
-        display: grid; /* Certifique-se de que o container usa grid */
+        display: grid; 
         grid-template-columns: 1fr; /* Uma coluna */
-        justify-items: center; /* Centraliza os itens na grid */
-        text-align: center; /* Centraliza textos */
+        justify-items: center; 
+        text-align: center; 
     }
 
     .photo-container {
-        display: flex; /* Garante o uso de flexbox */
+        display: flex; 
         flex-direction: column;
-        align-items: center; /* Centraliza os itens */
-        text-align: center; /* Centraliza o texto */
+        align-items: center; 
+        text-align: center; 
     }
 
     .photo-container img {
-        width: 90%; /* Ajusta a largura para 90% do container */
-        max-width: 300px; /* Define um limite máximo para a largura */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%; 
+        max-width: 400px; 
+        height: auto; 
+        align-items: center; 
     }
 }
