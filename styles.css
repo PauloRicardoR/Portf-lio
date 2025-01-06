@@ -388,4 +388,10 @@ footer a:hover {
         align-items: center; /* Centraliza os itens */
         text-align: center; /* Centraliza o texto */
     }
+
+    .photo-container img {
+        width: 90%; /* Ajusta a largura para 90% do container */
+        max-width: 300px; /* Define um limite máximo para a largura */
+        height: auto; /* Mantém a proporção da imagem */
+    }
 }
