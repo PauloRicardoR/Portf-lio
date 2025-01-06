@@ -65,9 +65,10 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 90vh;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Container */
@@ -80,7 +81,7 @@ nav ul li a:hover {
 /* Seções */
 
 .left-section, .right-section {
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +113,10 @@ p {
     position: relative;
 }
 
+.efeito-img, .efeito-txt, .titulo, .efeito-p, .efeito-sk1, .efeito-sk2, .efeito-sk3, .efeito-sk4 {
+    visibility: hidden;
+}
+
 .profile-picture img {
     width: 100%;
     height: 100%;
@@ -122,7 +127,7 @@ p {
 .social-icons {
     display: flex;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .social-icons a {
@@ -139,7 +144,7 @@ p {
 .second-container {
     background-color: #fff;
     color: #333;
-    padding: 20px;
+    padding: 40px 50px ;
     text-align: center;
 }
 
@@ -166,7 +171,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    padding: 3%;
     margin-top: 0;
 }
 
