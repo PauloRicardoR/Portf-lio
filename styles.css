@@ -366,17 +366,26 @@ footer a:hover {
  @media (max-width: 600px) {
     header {
         flex-direction: column;
+        align-items: center; /* Centraliza os itens no eixo horizontal */
     }
 
     .container {
         flex-direction: column;
+        align-items: center; /* Centraliza os itens no eixo horizontal */
+        text-align: center; /* Centraliza o texto */
     }
 
     .skills-container {
-        grid-template-columns: 1fr;
+        display: grid; /* Certifique-se de que o container usa grid */
+        grid-template-columns: 1fr; /* Uma coluna */
+        justify-items: center; /* Centraliza os itens na grid */
+        text-align: center; /* Centraliza textos */
     }
 
     .photo-container {
+        display: flex; /* Garante o uso de flexbox */
         flex-direction: column;
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
     }
 }
