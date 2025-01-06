@@ -46,6 +46,7 @@ revelar.reveal('.efeito-sk3', {
     delay: 1100
 })
 
+
 revelar.reveal('.efeito-sk4', {
     duration: 2000,
     distance: '50px',
